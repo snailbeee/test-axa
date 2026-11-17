@@ -8,8 +8,15 @@ dependencies = []
 
 
 [project.scripts]
-test-package = "test_package:main"
+test-package = "synthetiser:main"
 
 [build-system]
 requires = ["uv_build>=0.10.12,<0.11.0"]
 build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pyrefly>=1.4.1",
+    "pytest>=9.2.0",
+    "ruff>=0.17.5",
+]
