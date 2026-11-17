@@ -11,6 +11,7 @@ def main():
         for entretien_id, conversation in entretiens.items():
             content = llm.synthetize(conversation)
             synthesis[entretien_id] = content
+        print(synthesis)
         return synthesis
     finally:
         llm.close()

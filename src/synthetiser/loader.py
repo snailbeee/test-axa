@@ -1,8 +1,6 @@
 import json
 from pathlib import Path
 
-from synthetiser.constants import ENTRETIENS_DIR
-
 
 def load_entretiens(entretiens_dir: Path) -> dict:
     entretiens = {}
@@ -18,4 +16,4 @@ def load_entretiens(entretiens_dir: Path) -> dict:
     return entretiens
 
 
-print(load_entretiens(ENTRETIENS_DIR))
+# print(load_entretiens(ENTRETIENS_DIR))
