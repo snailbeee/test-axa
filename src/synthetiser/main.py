@@ -15,7 +15,6 @@ def main():
         return synthesis
     finally:
         llm.close()
-    return 0
 
 
 if __name__ == "__main__":
